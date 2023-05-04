@@ -26,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 		if (!(b[lng] == '0' || b[lng] == '1'))
 			return (0);
 
-		convert |= (b[lng] - '0') << pwr;
+		convert += (b[lng] - '0') * pwr;
 		pwr *= 2;
 	}
 
