@@ -12,9 +12,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	if (b == NULL)
-	{
 		return (0);
-	}
 
 	unsigned int convert = 0;
 	unsigned int pwr = 1;
