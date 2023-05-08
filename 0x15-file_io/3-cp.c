@@ -55,7 +55,7 @@ int main(int argc, char **argv)
 	fds = open(argv[1], O_RDONLY);
 	if (fds == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Cannot read from this file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		close(fdscp);
 		exit(98);
 	}
@@ -63,7 +63,7 @@ int main(int argc, char **argv)
 	{
 		if (rd == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Cannot read from this file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			close(fdscp);
 			exit(98);
 		}
