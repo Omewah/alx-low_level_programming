@@ -3,6 +3,7 @@
 /**
  * dlistint_len - returns the number of elements in LL
  * @h: the head of the list
+ *
  * Return: the number of elements in the LL
  */
 
