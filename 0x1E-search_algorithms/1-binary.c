@@ -2,7 +2,6 @@
 
 /**
  * binary_search - searches for a value in a sorted array of integers
- * using the binary search algorithm
  * @array: array of integers
  * @size: size of array
  * @value: value to search for
@@ -12,25 +11,25 @@
 int binary_search(int *array, size_t size, int value)
 {
 
-	size_t i, left, right;
+	size_t i, j, k;
 
 	if (array == NULL)
 		return (-1);
 
-	for (left = 0, right = size - 1; right >= left;)
+	for (j = 0, k = size - 1; k >= j;)
 	{
 		printf("Searching in array: ");
-		for (i = left; i < right; i++)
+		for (i = j; i < k; i++)
 			printf("%d, ", array[i]);
 		printf("%d\n", array[i]);
 
-		i = left + (right - left) / 2;
+		i = j + (k - j) / 2;
 		if (array[i] == value)
 			return (i);
 		if (array[i] > value)
-			right = i - 1;
+			k = i - 1;
 		else
-			left = i + 1;
+			j = i + 1;
 	}
 
 	return (-1);
