@@ -34,7 +34,7 @@ static void print_array(int *array, size_t lo, size_t hi)
  * Return: If value is not present in array or array is NULL, return -1.
  * Otherwise, returh the first index where value is located.
  */
-static int _binary_search(int *array, size_t left, size_t right, int value)
+int _binary_search(int *array, size_t left, size_t right, int value)
 {
 	size_t mid;
 
