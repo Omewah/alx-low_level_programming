@@ -27,8 +27,8 @@ static void print_array(int *array, size_t lo, size_t hi)
 /**
  * _binary_search - search for a value in a sorted array of integers
  * @array: the array of values
- * @lo: the smallest index
- * @hi: the greatest index
+ * @left: the smallest index
+ * @right: the greatest index
  * @value: the value to locate
  *
  * Return: If value is not present in array or array is NULL, return -1.
