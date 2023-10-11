@@ -1,5 +1,8 @@
 #include "search_algos.h"
 
+#define VALUE_CHECKED(array, index) \
+	printf("Value checked array[%lu] = [%d]\n", index, array[index])
+
 /**
  * linear_search - to search for a value in an array of integers
  * @array: a pointer to the first element of the array
